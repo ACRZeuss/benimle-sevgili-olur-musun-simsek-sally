@@ -2,7 +2,7 @@ function moveButton() {
     var button = document.getElementById("button2");
     var buttonWidth = button.offsetWidth;
     var buttonHeight = button.offsetHeight;
-    var containerWidth = 1112;
+    var containerWidth = 600;
     var containerHeight = 250;
 
     // Butonun rastgele x ve y konumları hesaplanır

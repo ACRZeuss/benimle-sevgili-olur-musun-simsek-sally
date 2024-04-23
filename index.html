@@ -2,26 +2,33 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./src/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benimle sevgili olur musun? | Erhan Polat</title>
+    <title>Benimle sevgili olur musun?</title>
   </head>
   <body>
     <div class="frame">
       <div align="center" style="margin-top: 100px">
         <h1>Benimle sevgili olur musun?</h1>
-        <img src="./assets/maxresdefault.jpg" alt="" width="900px" />
+        <img src="./assets/maxresdefault.jpg" alt="" width="500px" />
       </div>
       <div id="buttons" class="buttons" style="display: flex">
-        <div id="button1" class="box">
-          <p>Evet</p>
-        </div>
-        <div id="button2" class="box" onmouseover="moveButton()">
+        <a href="./saidyes" style="text-decoration: none; color: white">
+          <div id="button1" class="box">
+            <p>Evet</p>
+          </div>
+        </a>
+        <div
+          id="button2"  
+          class="box"
+          onmouseover="moveButton()"
+          style="margin-left: 175px"
+        >
           <p>Hayır</p>
         </div>
       </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
