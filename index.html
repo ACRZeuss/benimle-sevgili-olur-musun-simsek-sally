@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 50px;
+        margin: 2px;
+        background-color: red;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+      }
+
+      #button2 {
+        z-index: 1;
+      }
+
+      .buttons {
+        position: relative;
+        margin-left: 42%;
+        margin-top: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div align="center" style="margin-top: 100px">
+        <h1>Benimle sevgili olur musun?</h1>
+        <img src="./assets/maxresdefault.jpg" alt="" width="900px" />
+      </div>
+      <div id="buttons" class="buttons" style="display: flex">
+        <div id="button1" class="box">
+          <p>Evet</p>
+        </div>
+        <div id="button2" class="box" onmouseover="moveButton()">
+          <p>Hayır</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function moveButton() {
+        var button = document.getElementById("button2");
+        var buttonWidth = button.offsetWidth;
+        var buttonHeight = button.offsetHeight;
+        var containerWidth = 1112;
+        var containerHeight = 250;
+
+        // Butonun rastgele x ve y konumları hesaplanır
+        var maxX = containerWidth - buttonWidth;
+        var maxY = containerHeight - buttonHeight;
+        var newX = Math.floor(Math.random() * maxX);
+        var newY = Math.floor(Math.random() * maxY);
+
+        // Butonun pozisyonu ayarlanır
+        button.style.left = newX + "px";
+        button.style.top = newY + "px";
+      }
+    </script>
+  </body>
+</html>
