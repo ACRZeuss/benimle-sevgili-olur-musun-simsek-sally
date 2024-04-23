@@ -1,0 +1,21 @@
+.box {
+    width: 150px;
+    height: 50px;
+    margin: 2px;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  #button2 {
+    z-index: 1;
+  }
+
+  .buttons {
+    position: relative;
+    margin-left: 42%;
+    margin-top: 2%;
+  }
